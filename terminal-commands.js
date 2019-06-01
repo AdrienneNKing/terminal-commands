@@ -16,7 +16,7 @@ const fs = require('fs');
 
 module.exports.touch = (input) => {
   fs.writeFile(input, data, (err) => {
-    if (err) throw err;
+    if(err) throw err;
     console.log('Success');
   });
 };
