@@ -15,7 +15,7 @@ const fs = require('fs');
  };
 
 module.exports.touch = (input) => {
-  fs.writeFile(input, data, (err) => {
+  fs.writeFile(input, "", "utf8", (err) => {
     if(err) throw err;
     console.log('Success');
   });
